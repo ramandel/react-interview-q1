@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  padding: 1em;
+}
+
+.App > * {
+  margin: 2em 0;
 }
 
 .App-logo {
@@ -35,4 +40,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 1em;
+}
+
+.error {
+  color: red;
+}
+.hidden {
+  /* did this for a simple way to mitigate resizing between error state and all good state*/
+  visibility: hidden;
+}
+
+.locationContainer {
+  display: flex;
+}
+.location {
+  flex-grow: 1;
+  margin: 0 1em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.buttonContainer button {
+  margin: 0 1em;
+}
+
+.tableContainer {
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  flex-grow: 1;
+  margin-right: 1em;
+  text-align: left;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: .5em .75em;
+}
+
+thead {
+  background-color: #ccc;
 }
